@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeComments" version="1">
+    <comments>
+      <comment>
+        <place from="7042" to="7291">
+          <path mode="project">src/QuickOpenForm.java</path>
+        </place>
+        <text>this.add(panel1, BorderLayout.NORTH);
+        this.add(panel2, BorderLayout.CENTER);
+
+
+        this.pack();
+        // set size
+        this.setSize(900, 650);
+        this.setLocation(200, 200);
+        this.setVisible(true);
+
+        // set cl</text>
+        <data>22222</data>
+      </comment>
+      <comment>
+        <place from="681" to="831">
+          <path mode="project">src/Test.java</path>
+        </place>
+        <text>start = ans[0];
+                int remain = ans[1];
+                int count  = ans [2];
+                n = remain;
+                res += count;</text>
+        <data>jlljlkjlkj</data>
+      </comment>
+      <comment>
+        <place from="951" to="1069">
+          <path mode="project">src/Test.java</path>
+        </place>
+        <text>int count = 0;
+            while ( start &lt;= n) {
+                start = start &lt;&lt; 1;
+                count++;</text>
+        <data>kjloiuoiu</data>
+      </comment>
+    </comments>
+  </component>
+</project>

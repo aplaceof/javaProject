@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeReadingNote">
+    <topics>
+      <topic>
+        <name>sldfdsf</name>
+        <note />
+        <updatedAt>2021-07-06 11:21:00</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>92</line>
+            <description>标识1</description>
+            <inProject>true</inProject>
+            <url>file://$PROJECT_DIR$/src/Test.java</url>
+            <note />
+            <relativePath>src/Test.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </topic>
+    </topics>
+    <state lastExportDir="" lastImportDir="" />
+  </component>
+</project>
