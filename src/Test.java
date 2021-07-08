@@ -6,9 +6,10 @@ public class Test  {
     int b;
 
 
+
    public void fun() {
 
-
    }
+
 }
 
