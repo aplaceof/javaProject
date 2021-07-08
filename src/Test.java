@@ -5,6 +5,7 @@ public class Test  {
     int a;
     int b;
 
+
    public void fun() {
 
    }
