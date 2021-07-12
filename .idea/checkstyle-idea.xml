@@ -7,7 +7,7 @@
         <entry key="copy-libs" value="false" />
         <entry key="location-0" value="BUNDLED:(bundled):Sun Checks" />
         <entry key="location-1" value="BUNDLED:(bundled):Google Checks" />
-        <entry key="location-2" value="LOCAL_FILE:/Users/alf/Downloads/google_checks-8.39_cur.xml:自己的配置" />
+        <entry key="location-2" value="LOCAL_FILE:/Users/alf/softwareConfig/ideaConfig/check-style-config/checkStyleConfigFile/google_checks-8.39_cur.xml:my own config" />
         <entry key="scan-before-checkin" value="false" />
         <entry key="scanscope" value="JavaOnly" />
         <entry key="suppress-errors" value="false" />

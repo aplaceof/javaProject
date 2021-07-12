@@ -1,0 +1,89 @@
+#!/bin/bash
+#@author:jimo#
+#@func:pre-commit#
+## cp ./check-style/pre-commit ./.git/hooks/
+
+# 一个打印函数，前后加空行
+function print(){
+    echo ""
+    echo "===========$*============"
+    echo ""
+}
+
+print start  style checking
+
+wd=`pwd`
+print "current work dir ：$wd"
+
+check_jar_path="$.git/checkstyle/checkstyle-8.37-all.jar"
+check_xml_path="$.git/checkstyle/google_checks-8.39_cur.xml"
+
+
+
+# 检查文件是否存在 开始
+
+if [[ ! -f "$check_jar_path" ]]; then
+   echo "%%%%%%%%%%%%%     there is an error    %%%%%%%%%%%%%"
+  print "check style jar file  does not exist  "
+  is_err=1
+fi
+
+if [[ ! -f "$check_xml_path" ]]; then
+   echo "%%%%%%%%%%%%%      there is an error     %%%%%%%%%%%%%"
+  print "   config file  does not exist "
+  is_err=1
+fi
+
+if [[ $is_err -ne 0 ]];
+then
+    print " please config the enviroment first "
+    exit 1
+fi
+
+# 检查文件是否存在 结束
+
+
+# echo $check_jar_path $check_xml_path
+
+# 清空temp文件
+rm -f checkStyleTemp.txt
+
+is_err=0
+
+# 真正的校验开始了
+for file in `git diff --name-only --cached    |   grep '\.java$'`;do
+
+    path="$file"
+    print "check file start :  $path"
+
+    re=`java -jar $check_jar_path -c $check_xml_path $path 1>> checkStyleTemp.txt 2>&1 `
+
+    err=`grep -a -i "error" checkStyleTemp.txt `
+
+    result=$(echo $err | grep -i "error")
+
+    # 如果执行结果中含有 error 字符串
+    if [[ "$result" != "" ]];
+    then
+        echo "%%%%%%%%%%%%%      there is an error     %%%%%%%%%%%%%"
+        print $err
+        is_err=1
+    fi
+done
+
+# 真正的校验结束了
+
+print " already checked good luck "
+
+rm -f checkStyleTemp.txt
+
+if [[ $is_err -ne 0 ]];
+then
+    print " please check your coding style  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "
+    exit 1
+fi
+
+exit 0
+
+
+
