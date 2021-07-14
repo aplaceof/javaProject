@@ -13,7 +13,7 @@ public class Test {
   int a;
 
   int b;
-  /** * ksssssdjflksssssajdf */
+  /** * ksssssdjflksssssssajdf */
   String aa;
 
   /**
