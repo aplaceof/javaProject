@@ -10,7 +10,7 @@
         <entry key="location-2" value="LOCAL_FILE:/Users/alf/softwareConfig/ideaConfig/check-style-config/checkStyleConfigFile/google_checks-8.39_cur.xml:my own config" />
         <entry key="scan-before-checkin" value="true" />
         <entry key="scanscope" value="JavaOnly" />
-        <entry key="suppress-errors" value="false" />
+        <entry key="suppress-errors" value="true" />
         <entry key="thirdparty-classpath" value="$USER_HOME$/Downloads/google-check_style_latest.xml" />
       </map>
     </option>
