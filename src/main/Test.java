@@ -9,10 +9,11 @@ import java.util.ArrayList;
  */
 public class Test {
 
-  /** b */
   int a;
   /** b */
   int b;
+  /** * ksdjflksajdf */
+  String aa;
 
   /**
    * this is a function
