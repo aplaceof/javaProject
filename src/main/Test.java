@@ -2,6 +2,7 @@ package main;
 
 import java.util.ArrayList;
 
+/** @author alf */
 public class Test {
 
   /** b */
