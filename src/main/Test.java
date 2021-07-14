@@ -11,9 +11,6 @@ public class Test {
 
   String aa;
 
-
-
-
   /**
    * this is a function a
    *
