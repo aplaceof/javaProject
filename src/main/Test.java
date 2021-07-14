@@ -9,8 +9,9 @@ import java.util.ArrayList;
  */
 public class Test {
 
-  int a;
   /** b */
+  int a;
+
   int b;
   /** * ksdjflksajdf */
   String aa;
